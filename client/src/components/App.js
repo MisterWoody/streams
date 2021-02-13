@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 const PageOne = () => {
-  return <div>PageOne</div>  
+  return <div>PageOne</div> 
+    // BAD! Do not add an anchor tag to navigate to another page as you would normally.
 };
 
 const PageTwo = () => {
