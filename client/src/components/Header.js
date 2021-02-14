@@ -1,8 +1,20 @@
 ﻿import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <h1>Header</h1>
+        <div className="ui secondary pointing menu">
+            <Link to="/" className="item" exact >
+                Streamer
+            </Link>
+            <div className="right menu">
+                <Link to="/" className="item" >
+                    All streams
+                </Link>
+            </div>
+            
+            
+        </div>
     );
 }
 
