@@ -1,11 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const PageOne = () => {
-  return <div>PageOne</div> 
-    // BAD! Do not add an anchor tag to navigate to another page as you would normally.
-    // And really really bad - you lose all the state and data so far
-    
+  return (
+      <div>PageOne
+        // BAD! Do not add an anchor tag to navigate to another page as you would normally.
+        // And really really bad - you lose all the state and data so far
+        <a href="pagetwo">Navigate to page two</a>)
+      </div>
+  )
 };
 
 const PageTwo = () => {
